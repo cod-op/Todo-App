@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:7000/api/v1";
+axios.defaults.baseURL = "https://todo-app-backend-vse5.onrender.com/api/v1";
 
 const getAuthHeader = () => {
   const user = JSON.parse(localStorage.getItem("todoapp"));
