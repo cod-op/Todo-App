@@ -1,0 +1,100 @@
+/* Navbar wrapper */
+.navbar {
+  background-color: #eef0f3;
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Container */
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+ 
+  align-items: center;
+}
+
+/* User icon */
+.user {
+  height: 40px;
+  width: 40px;
+}
+
+/* Nav items */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+
+/* Logout button */
+.logout-btn {
+  background: red;
+  border: none;
+  font-size: large;
+
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Toggle button */
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .navbar-nav.show-menu {
+    display: flex;
+  }
+}

@@ -1,0 +1,108 @@
+
+.filter-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.filter-container h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.filter-group select {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Cards container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+/* Card styling */
+.card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 18rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Card header */
+.chead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chead h6 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Task status */
+.task-cmp {
+  color: green;
+  font-weight: bold;
+}
+
+.task-inc {
+  color: red;
+  font-weight: bold;
+}
+
+/* Card body */
+.card-body h6 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.card-body h6:last-child {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* No task message */
+.no-task {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #999;
+  margin-top: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .filter-container {
+    padding: 0 0.5rem;
+  }
+}
