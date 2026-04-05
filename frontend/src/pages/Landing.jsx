@@ -1,33 +1,44 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import Hero from  "../assets/hero.jpg"
-import './Landing.css'
+import Hero from "../assets/hero.jpg";
+import "./Landing.css";
 
 function Landing() {
   return (
-     <div className="hero">
-      <div className="intro-text">
-        <h1>
-          <span className="tagline1">Organize work and life</span> <br />
-          <span className="tagline2">finally.</span>
-        </h1>
-        <p>
-          type just anything into the tasdk field and TodoList <br />
-          on-of-its-kind natural langugae recognition will instantly fill your
-          to-do-list
-        </p>
-        <Link className="btn red" to="/register">
-          Register Now!
-        </Link>
-        <Link className="btn blue" to="/login">
-          Login
-        </Link>
-      </div>
-      <div className="">
-        <img src={Hero} alt="heroimage" width={"100%"} height={515} />
-      </div>
-    </div>
-  )
+    <main className="landing">
+      <section className="hero">
+        
+    
+        <div className="hero-content">
+          <h1 className="hero-title">
+            Organize your work and life,
+            <br />
+            <span>finally.</span>
+          </h1>
+
+          <p className="hero-subtitle">
+            Just type anything into the task field — our smart natural language
+            recognition instantly converts it into actionable tasks.
+          </p>
+
+          <div className="hero-buttons">
+            <Link className="btn1" to="/register">
+               Signup
+            </Link>
+            <Link className="btn2" to="/login">
+              Login
+            </Link>
+          </div>
+        </div>
+
+     
+        <div className="hero-image">
+          <img src={Hero} alt="Image" />
+        </div>
+
+      </section>
+    </main>
+  );
 }
 
-export default Landing
+export default Landing;
