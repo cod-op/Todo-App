@@ -1,16 +1,41 @@
-# React + Vite
+# 📝 Modern MERN Todo Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ek lightweight aur high-performance **Full-Stack Task Management Application**. Is project ka main focus **Secure Authentication**, **Clean UI**, aur **Optimized React State Management** par hai.
 
-Currently, two official plugins are available:
+## 🔗 Project Links
+- **Live Demo:** [Todo App on Render](https://todo-app-frontend-4u8e.onrender.com/)
+- **Source Code:** [GitHub Repository](https://github.com/cod-op/Todo-App)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
+- **🔐 User Authentication:** JWT-based Register aur Login functionality (Secure Password Hashing ke sath).
+- **📝 Task Management:** User-specific tasks ko create, update aur delete karne ki facility.
+- **🛡️ Protected Routes:** Sirf authenticated users hi apne dashboard aur tasks ko access kar sakte hain.
+- **🎨 Pure CSS Styling:** Bina kisi framework (Bootstrap/Tailwind) ke, custom CSS se banaya gaya modern aur minimal design.
+- **💾 Data Persistence:** MongoDB ka use karke data ko permanently save kiya gaya hai.
+- **📱 Responsive Design:** Mobile, Tablet aur Desktop screens ke liye fully optimized layout.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
+- **Frontend:** React.js (Vite) & Axios
+- **Backend:** Node.js & Express.js
+- **Database:** MongoDB Atlas
+- **Security:** JSON Web Tokens (JWT) & BcryptJS
+- **Styling:** Custom CSS3 (Flexbox & Grid)
+- **Deployment:** Render
+- **Version Control:** Git & GitHub
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📡 API Documentation
+
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `POST` | `/api/register` | User registration ke liye | ❌ |
+| `POST` | `/api/login` | User login aur token generation ke liye | ❌ |
+| `POST` | `/api/create` | Naya task create karne ke liye | ✅ |
+| `POST` | `/api/getAll/:userId` | User-specific saare tasks fetch karne ke liye | ✅ |
+| `PATCH` | `/api/update/:id` | Task status/content update karne ke liye | ✅ |
+| `DELETE` | `/api/delete/:id` | Task ko database se remove karne ke liye | ✅ |
+
+
